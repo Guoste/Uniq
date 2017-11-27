@@ -54,7 +54,15 @@ h1 {
     font-size: 36px;
     margin-bottom: 0;
 }
-   
+
+h1.container-services {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    
+    display: inline-block;
+}   
 h4 {
     font-size: 24px;
     letter-spacing: 3px;
@@ -69,6 +77,7 @@ h4 {
     font-size: 16px;
     padding: 8px 22px;
     letter-spacing: 1px;
+    color: #fff;
 }
     .btn-flamingo:hover {
         background-color: #fff;
@@ -92,11 +101,8 @@ h4 {
     color: #fff;
     text-transform: uppercase;
 }
-    .main-slide .btn-flamingo {
-        color: #fff;
-    }
 
-    .main-text {
+.main-text {
         margin-top: 270px;
         letter-spacing: 3px;
         text-shadow: 2px 2px 1px rgba(0,0,0,0.2);
@@ -139,8 +145,103 @@ margin-top: 73px;
     font-size: 13px;
     letter-spacing: 2px;
 }
+/*Registruokis*/
 
+.register div {
+    margin-top:40px;
+    margin-bottom: 40px;
+    padding: 30px;
+    border-top:1px solid #f38586;
+    border-bottom:1px solid #f38586;
+    font-size: 24px;
+    color: #f38586;
+}
 
+.register span {
+    font-weight: 600;
+}
+
+.register .btn-flamingo {
+    margin-left: 15px;
+}
+/*Paslaugos*/
+
+.services hr {
+    margin-top: 0;
+    width: 260px;
+    background-color: rgb(22, 70, 90);
+    margin-bottom: 88px;
+}
+
+.services h1 {
+    margin-top: 88px;
+}
+
+.services h4 {
+    margin-top: 46px;
+}
+
+.services-items {
+    text-transform: uppercase;
+    font-size: 20px;
+    display: block;
+    margin-top: 123px;
+    margin-bottom: 130px;
+}
+
+/*Kalendorius*/
+.schedule {
+margin-top: 40px;
+}
+/*Tvarkaraštis*/
+.ui-datepicker-header a {
+    cursor: pointer;
+}
+.ui-datepicker-prev {
+    background: url("img/left-arrow.png") 0 0 no-repeat;
+}
+
+.ui-datepicker-calendar th {
+    color: #f38586;
+}
+
+.ui-datepicker-calendar td a {
+    color: #000;
+}
+
+.ui-datepicker-calendar .ui-state-active {
+    background-color: #f38586;
+    color: #fff;
+}
+
+.ui-datepicker .ui-datepicker-next {
+    background: url("img/right-arrow.png") 0 0 no-repeat;
+}
+    
+.ui-datepicker td span, .ui-datepicker td a {
+    text-align: center;
+    padding: 0.4rem 0.2rem;
+}
+
+.ui-state-default:hover:not(.ui-state-active) {
+   background-color: rgba(243, 133, 134, 0.2);
+}
+
+.highlighted a{
+border: 1px solid #f38586;
+}
+/*Rėmėjai*/
+.sponsors {
+    border-top: 1px solid #f38586;
+    margin-top: 40px
+}
+.sponsors h1 {
+    color: #bebebe;
+    padding: 120px 0 60px 0;
+}
+.first-logo {
+    max-height: 50px;
+}
 /* Half column backgrounds */
 /* Mobile */
 @media (max-width: 575px) {
@@ -149,6 +250,12 @@ margin-top: 73px;
 }
 /* SM+ */
 @media (min-width: 576px) {
-    .left-col-bg-gray { background: linear-gradient(90deg, #f4f4f4 50%, #fff 50%) }
-    .right-col-bg-gray { background: linear-gradient(90deg, #fff 50%, #f4f4f4 50%) }
+.left-col-bg-gray { 
+    background: linear-gradient(90deg, #f4f4f4 50%, rgba(255, 255, 255,0) 50%);
+    position: relevant;
+    margin: -40px; }
+.right-col-bg-gray { 
+    background: linear-gradient(90deg, rgba(255, 255, 255,0) 50%, #f4f4f4 50%);
+    position: relevant;
+    margin: -40px;
 }
