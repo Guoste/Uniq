@@ -1,0 +1,154 @@
+body {
+    font-family: 'Raleway',"Arial", sans-serif;
+    font-size: 14px;
+}
+
+/* Menu */
+
+/* Logo */
+.navbar-brand {
+    margin-right: 3rem;
+}
+    .navbar-brand span {
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 1rem;
+        text-align: center;
+        color: #939393;
+        margin-top: -7px;
+    }
+
+/* Items */
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+    text-transform: uppercase;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0.5rem 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* Active item */
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .show > .nav-link {
+    color: #f38586;
+    border-bottom: 1px solid #f38586;
+}
+
+/* Dropdowns */
+.dropdown-menu {
+    border: none;
+}
+    .dropdown-item:focus, .dropdown-item:hover {
+        color: #f38586;
+        background-color: transparent;
+    }
+
+/* Headings */
+h1 {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 36px;
+    margin-bottom: 0;
+}
+   
+h4 {
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+/* Buttons */
+.btn-flamingo {
+    background-color: #f38586;
+    border-radius: 7px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 22px;
+    letter-spacing: 1px;
+}
+    .btn-flamingo:hover {
+        background-color: #fff;
+        border-color: #f38586;
+        color: #f38586;
+        cursor: pointer;
+    }
+
+/* Common */
+.bg-gray {
+    background-color: #f4f4f4;
+}
+
+/* Sections */
+
+/*Main Slide*/
+.main-slide {
+    background: url("img/slide-photo.jpg") 0 center;
+    background-size: cover;
+    height: 490px;
+    color: #fff;
+    text-transform: uppercase;
+}
+    .main-slide .btn-flamingo {
+        color: #fff;
+    }
+
+    .main-text {
+        margin-top: 270px;
+        letter-spacing: 3px;
+        text-shadow: 2px 2px 1px rgba(0,0,0,0.2);
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 36px;
+    }
+
+/*Apie mus*/
+
+.about-us hr {
+margin-top: 0;
+width: 205px;
+background-color: rgb(22, 70, 90);
+}
+
+.about-us h1 {
+    margin-top: 100px;
+}
+.about-us h4 {
+margin-top: 73px;
+}
+
+.about-us img {
+    height: 250px;
+    display: block;
+    margin: 20px 0 0 50px;
+}
+
+.about-us .horizontal-img {
+    margin-left: 45px;
+}
+
+.about-us .last-img {
+    margin-bottom: 20px;
+}
+
+.about-us a {
+    color: #f38586;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+
+/* Half column backgrounds */
+/* Mobile */
+@media (max-width: 575px) {
+    .left-col-bg-gray .col-sm:first-child { background-color: #f4f4f4 }
+    .right-col-bg-gray .col-sm:nth-child(2) { background-color: #f4f4f4 }
+}
+/* SM+ */
+@media (min-width: 576px) {
+    .left-col-bg-gray { background: linear-gradient(90deg, #f4f4f4 50%, #fff 50%) }
+    .right-col-bg-gray { background: linear-gradient(90deg, #fff 50%, #f4f4f4 50%) }
+}
