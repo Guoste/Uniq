@@ -53,16 +53,9 @@ h1 {
     letter-spacing: 6px;
     font-size: 36px;
     margin-bottom: 0;
+    text-align: center;
 }
 
-h1.container-services {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    
-    display: inline-block;
-}   
 h4 {
     font-size: 24px;
     letter-spacing: 3px;
@@ -79,12 +72,19 @@ h4 {
     letter-spacing: 1px;
     color: #fff;
 }
-    .btn-flamingo:hover {
+    .btn-flamingo:hover, .btn-flamingo:active {
         background-color: #fff;
         border-color: #f38586;
         color: #f38586;
         cursor: pointer;
     }
+.white-borders {
+    border: 1px solid #fff;
+    font-weight: 400;
+}
+.btn-long {
+    padding-right: 160px;
+}
 
 /* Common */
 .bg-gray {
@@ -120,23 +120,25 @@ background-color: rgb(22, 70, 90);
 }
 
 .about-us h1 {
-    margin-top: 100px;
+    margin-top: 200px;
 }
 .about-us h4 {
 margin-top: 73px;
 }
 
 .about-us img {
-    height: 250px;
-    display: block;
+    width: 80%;
+    max-width: 295px;
     margin: 20px 0 0 50px;
 }
 
-.about-us .horizontal-img {
+.about-us img:nth-child(2) {
+    max-width: 392px;
+    width: 100%;
     margin-left: 45px;
 }
 
-.about-us .last-img {
+.about-us img:nth-child(3) {
     margin-bottom: 20px;
 }
 
@@ -149,7 +151,6 @@ margin-top: 73px;
 
 .register div {
     margin-top:40px;
-    margin-bottom: 40px;
     padding: 30px;
     border-top:1px solid #f38586;
     border-bottom:1px solid #f38586;
@@ -164,6 +165,33 @@ margin-top: 73px;
 .register .btn-flamingo {
     margin-left: 15px;
 }
+
+/* Swiper slider */
+
+.swiper-container {
+    height: 50vh;
+}
+
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    height: 100%;
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+  
+.swiper-slide.swiper-slide-next img {
+    /* Disable grayscale for center item */
+    -webkit-filter: grayscale(0);
+    filter: none;
+}
+
 /*Paslaugos*/
 
 .services hr {
@@ -174,7 +202,7 @@ margin-top: 73px;
 }
 
 .services h1 {
-    margin-top: 88px;
+    margin-top: 128px;
 }
 
 .services h4 {
@@ -189,11 +217,47 @@ margin-top: 73px;
     margin-bottom: 130px;
 }
 
+.services-items div {
+    margin-top: 25px;
+}
+
+.services-text {
+ padding-left: 40px;
+}
 /*Kalendorius*/
 .schedule {
 margin-top: 40px;
+border-top: 1px solid #f38586;
+}
+.flamingo-block {
+    background-color: #f38586;
+    padding: 30px 50px;
+}
+.schedule hr {
+    margin-top: 0;
+    margin-bottom: 70px;
+    width: 320px;
+    background-color: rgb(22, 70, 90);
+}
+.schedule h1 {
+    margin-top: 70px;
+}
+
+.calendar-year {
+    font-weight: bold;
+    text-align: center;
+}
+.schedule-block {
+width: 400px;
+height: 350px;
+margin: 40px;
+}
+
+.schedule.container>button {
+    margin: 0 auto;
 }
 /*Tvarkaraštis*/
+
 .ui-datepicker-header a {
     cursor: pointer;
 }
@@ -201,12 +265,21 @@ margin-top: 40px;
     background: url("img/left-arrow.png") 0 0 no-repeat;
 }
 
+.ui-datepicker-month {
+    font-weight:bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.ui-datepicker-year {
+    font-weight:bold;
+}
 .ui-datepicker-calendar th {
     color: #f38586;
 }
 
 .ui-datepicker-calendar td a {
     color: #000;
+    font-weight: bold;
 }
 
 .ui-datepicker-calendar .ui-state-active {
@@ -237,11 +310,31 @@ border: 1px solid #f38586;
 }
 .sponsors h1 {
     color: #bebebe;
-    padding: 120px 0 60px 0;
+    padding-top: 120px;
 }
-.first-logo {
-    max-height: 50px;
+.sponsors img {
+    margin: 60px;
 }
+
+/*kontaktai*/
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    color: #DAEBF1;
+    background: #f38586;
+}
+
+.fa:hover {
+    background: #DAEBF1;
+    border: 2px solid #f38586;
+    -webkit-text-stroke: 2px #f38586;
+    
+}
+
 /* Half column backgrounds */
 /* Mobile */
 @media (max-width: 575px) {
@@ -252,10 +345,13 @@ border: 1px solid #f38586;
 @media (min-width: 576px) {
 .left-col-bg-gray { 
     background: linear-gradient(90deg, #f4f4f4 50%, rgba(255, 255, 255,0) 50%);
-    position: relevant;
-    margin: -40px; }
+    position: relative;
+    margin: -40px;
+    z-index: 1;
+}
 .right-col-bg-gray { 
     background: linear-gradient(90deg, rgba(255, 255, 255,0) 50%, #f4f4f4 50%);
-    position: relevant;
+    position: relative;
     margin: -40px;
 }
+
