@@ -55,7 +55,12 @@ h1 {
     margin-bottom: 0;
     text-align: center;
 }
-
+h3 {
+    color: #f38586;
+    letter-spacing: 3px;
+    font-size: 26px;
+    
+}
 h4 {
     font-size: 24px;
     letter-spacing: 3px;
@@ -71,19 +76,35 @@ h4 {
     padding: 8px 22px;
     letter-spacing: 1px;
     color: #fff;
+    width: 170px;
 }
-    .btn-flamingo:hover, .btn-flamingo:active {
+    .btn-flamingo:hover, .flamingo-block-btn:hover {
         background-color: #fff;
         border-color: #f38586;
         color: #f38586;
         cursor: pointer;
     }
-.white-borders {
+
+.flamingo-block-btn {
+    background-color: #f38586;
+    border-radius: 7px;
+    padding-top: 8px;
+    color: #fff;
     border: 1px solid #fff;
-    font-weight: 400;
+    width: 130px;
+    letter-spacing: 1px;
+    margin: 5px;
+    font-size: 14px;
 }
-.btn-long {
-    padding-right: 160px;
+
+.flamingo-block-btn:nth-child(1), .flamingo-block-btn:nth-child(2) {
+    text-transform: uppercase;
+}
+
+.flamingo-block-btn:nth-child(5) {
+    width: 270px;
+    text-transform: uppercase;
+    text-align: left;
 }
 
 /* Common */
@@ -109,8 +130,13 @@ h4 {
         font-weight: 400;
         text-transform: uppercase;
         font-size: 36px;
-    }
-
+}
+.main-slide-registration {
+    background: url("photos/gallery/A1 (6).jpg");
+    background-size: cover;
+    height: 450px;
+    filter: grayscale(100%);
+}
 /*Apie mus*/
 
 .about-us hr {
@@ -192,6 +218,12 @@ margin-top: 73px;
     filter: none;
 }
 
+.swiper-button-prev {
+    background-image: url("img/prev.png")
+}
+.swiper-button-next {
+    background-image: url("img/next.png")
+}
 /*Paslaugos*/
 
 .services hr {
@@ -231,7 +263,17 @@ border-top: 1px solid #f38586;
 }
 .flamingo-block {
     background-color: #f38586;
-    padding: 30px 50px;
+    }
+
+.block-text {
+    background: #fff;
+    color: #f38586;
+    height: 120px;
+    width: 270px;
+    margin: 0 auto;
+    border-radius: 7px;
+    padding: 20px 40px 20px 20px;
+    letter-spacing: 1px;
 }
 .schedule hr {
     margin-top: 0;
@@ -245,17 +287,14 @@ border-top: 1px solid #f38586;
 
 .calendar-year {
     font-weight: bold;
-    text-align: center;
+    text-align: right;
 }
 .schedule-block {
-width: 400px;
+max-width: 400px;
 height: 350px;
-margin: 40px;
+margin: 50px;
 }
 
-.schedule.container>button {
-    margin: 0 auto;
-}
 /*Tvarkaraštis*/
 
 .ui-datepicker-header a {
@@ -317,23 +356,64 @@ border: 1px solid #f38586;
 }
 
 /*kontaktai*/
-
+.contacts{
+    background: #DAEBF1;
+    padding:80px 100px 80px 0;
+}
 .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
+    font-size: 20px;
+    width:30px;
+    height:30px;
     border-radius: 50%;
     color: #DAEBF1;
     background: #f38586;
-}
+    padding: 5px 9px;
+    margin: 45px;
+   }
 
 .fa:hover {
     background: #DAEBF1;
-    border: 2px solid #f38586;
-    -webkit-text-stroke: 2px #f38586;
-    
+    border: 1px solid #f38586;
+    -webkit-text-stroke: 1px #f38586;
 }
+
+.contacts-text {
+    border-left: 1px solid #000;
+    padding-left: 30px;
+}
+
+/*forma*/
+
+.registration-form form {
+    max-width: 480px;
+    margin: 60px auto;
+   }
+
+.registration-form h3 {
+margin-top: 60px;
+}
+.form-column {
+    max-width: 240px;
+}
+.registration-form input, textarea{
+ min-width: 220px;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    padding: 7px 0 7px 15px;
+    border: 1px solid #939393;
+    font-size: 12px;
+}
+.registration-form input::placeholder, .registration-form textarea::placeholder {
+letter-spacing: 1px;
+color: #000;
+}
+
+.registration-form button {
+    margin:60px auto 0 auto;
+    display:block;
+   }
+
 
 /* Half column backgrounds */
 /* Mobile */

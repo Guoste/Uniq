@@ -18,8 +18,8 @@
 <body>
     <header class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">
-                <img src="img/logo.png" alt="Uniqdance">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Uniqdance logo">
                 <span>Šokiai visiems</span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
@@ -29,7 +29,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Pagrindinis
+                        <a class="nav-link" href="index.html">Pagrindinis
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
@@ -38,18 +38,17 @@
                             Apie mus
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Galerija</a>
-                            <a class="dropdown-item" href="#">Galerija 2</a>
+                            <a class="dropdown-item" href="#galerija">Galerija</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Paslaugos</a>
+                        <a class="nav-link" href="#paslaugos">Paslaugos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tvarkaraštis</a>
+                        <a class="nav-link" href="#tvarkarastis">Tvarkaraštis</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Kontaktai</a>
+                        <a class="nav-link" href="#kontaktai">Kontaktai</a>
                     </li>
                 </ul>
             </div>
@@ -61,13 +60,13 @@
             <div class="row">
                 <div class="col-lg offset-lg-7">
                     <p class="main-text">Šokiai visiems</p>
-                    <a href="" class="btn btn-flamingo">Registruokis</a>
+                    <a href="registration.html" class="btn btn-flamingo">Registruokis</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="about-us right-col-bg-gray">
+    <section class="about-us right-col-bg-gray" id="apie-mus">
         <div class="container">
             <div class="row">
                 <div class="col-sm section-center">
@@ -99,9 +98,9 @@
 
                 </div>
                 <div class="col-sm">
-                    <img src="img/A4.jpg" alt="">
-                    <img src="img/A3.jpg" alt="">
-                    <img src="img/A2.jpg" alt="">
+                    <img src="img/A4.jpg" alt="Happy faces">
+                    <img src="img/A3.jpg" alt="Children dancing">
+                    <img src="img/A2.jpg" alt="Dancing">
                 </div>
             </div>
         </div>
@@ -111,12 +110,12 @@
         <div> Registruokis pirmai pamokai
             <span>nemokamai
                 <span>
-                    <a href="" class="btn btn-flamingo">Registruokis</a>
+                    <a href="registration.html" class="btn btn-flamingo">Registruokis</a>
         </div>
     </section>
 
     <!-- Slider main container -->
-    <section class="gallery swiper-container">
+    <section class="gallery swiper-container" id="galerija">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
@@ -150,7 +149,7 @@
         <!-- <div class="swiper-scrollbar"></div> -->
     </section>
 
-    <section class="services left-col-bg-gray">
+    <section class="services left-col-bg-gray" id="paslaugos">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 text-center">
@@ -195,46 +194,57 @@
         </div>
     </section>
 
-    <section class="schedule">
+    <section class="schedule" id="tvarkarastis">
         <div class="container">
             <h1>Tvarkaraštis</h1>
             <hr>
             <div class="row d-flex justify-content-center">
-                <div class="flamingo-block schedule-block">
-                    <div class="row">
-                        <button class="col-xs btn btn-flamingo white-borders">Vilnius</button>
-                        <button class="col-xs btn btn-flamingo white-borders">Alytus</button>
+                <div class="col-sm flamingo-block schedule-block d-flex justify-content-center align-content-center flex-wrap">
+                    <button class="btn flamingo-block-btn">Vilnius</button>
+                    <button class="btn flamingo-block-btn">Alytus</button>
+                    <button class="btn flamingo-block-btn">nuo 7 metų</button>
+                    <button class="btn flamingo-block-btn">3-7 metų</button>
+                    <button class="btn flamingo-block-btn"> Laikas:</button>
+                    <div class="block-text"> <strong>11:00 - 11:45</strong> val. <br> Šokiai vaikams nuo 7 m.<br> studija "Judesys" Vilnius</div>
                     </div>
-                    <div class="row">
-                        <button class="btn btn-flamingo white-borders">nuo 7 metų</button>
-                        <button class="btn btn-flamingo white-borders">3-7 metų</button>
-                    </div>              
-                    <button class="btn btn-flamingo white-borders btn-long text-center"> Laikas:</button>
-                    <div> 11:00 - 11:45 val. <br> šokiai vaikams nuo 7 m. <br> studija "Judesys" Vilnius</div>
-                </div>
-                <div class="schedule-block">
+               
+                <div class="col-sm schedule-block">
                     <div class="calendar-year">2017</div>
-                    <div  id="datepicker"></div>
+                    <div id="datepicker"></div>
                 </div>
             </div>
 
-            <div class="text-center"><button class="btn btn-flamingo">Registruokis</button></div>
-        
+            <div class="text-center">
+                    <a href="registration.html" class="btn btn-flamingo">Registruokis</a>
+
         </div>
     </section>
 
     <section class="sponsors">
         <h1 class="text-center">Rėmėjai</h1>
         <div class="d-flex justify-content-center align-items-center">
-            <img src="img/Reach.png" alt="">
-            <img src="img/Kristina.png" alt="">
-            <img src="img/Miesto.png" alt="">
+            <img src="img/Reach.png" alt="Reach logo">
+            <img src="img/Kristina.png" alt="Kristina photo">
+            <img src="img/Miesto.png" alt="Miesto laboratorija">
         </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="kontaktai">
         <div class="container">
-            <a href="https://www.facebook.com/Uniq-Dance-688735231310347/"><i class="fa fa-facebook"></i></a>
+            <div class="row d-flex justify-content-end">
+               <a href="https://www.facebook.com/Uniq-Dance-688735231310347/">
+                <i class="fa fa-facebook"></i>
+            </a> 
+                <div class="contacts-text">
+                    Rita Žogelė.<br>
+                    Individualios veiklos vykdymo pažyma Nr. 673384, <br>
+                    Ekspreso 4-oji g. 7, Mikašiūnų km. Pagirių sen. Viniaus raj.<br>
+                    A.s. LT447300010086866838 AB bankas "Swedbank",<br>
+                    El. paštas rita,juskyte@gmail.com<br>
+                    Tel +37067605379
+                </div>
+
+            </div>
 
         </div>
     </section>
